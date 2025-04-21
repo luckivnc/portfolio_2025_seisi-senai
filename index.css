@@ -13,28 +13,54 @@
 body{
     background-color:#0f0e0c;
     font-family: 'Times New Roman', Times, serif;
-
-}
-button{
     color: #ffffff;
-    background: none;
-    border: none
 }
 
-.botao{
-    margin: 2%;
-}
-
-.botoes_inicio{
+.botoes_inicio {
+    button{
+        color: #ffffff;
+        background: none;
+        border: none;
+        
+    }
+    .botao{
+        margin: 3%;
+    }
+    
     display: flex;
     justify-content: center;
-   
+    
+    
+}
+.foto_apresentacao{
+    width: 30%;
+    
 
 }
+.foto_apresentacao img{
+    width: 100%;
+    height: auto;
+}
+.txt_apresentacao{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+apresentacao{
+    display: flex;
+
+}
+.baner img{
+    width: 100%;
+    height: auto;
+}
 .baner{
-    background-color: blue;
-    height: 30%;
-    width: 30%;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
 }
 
 
