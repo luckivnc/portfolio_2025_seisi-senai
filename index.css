@@ -15,25 +15,29 @@ body{
     font-family: 'Times New Roman', Times, serif;
     color: #ffffff;
 }
-
-.botoes_inicio {
-    button{
+button{
+    cursor: pointer;
+}
+.botoes_inicio{
+    display: flex;
+    justify-content: center;
+}
+.botoes_inicio button {
         color: #ffffff;
         background: none;
         border: none;
+        font-size: 140%;
         
-    }
-    .botao{
-        margin: 3%;
-    }
-    
-    display: flex;
-    justify-content: center;
-    
-    
+}
+.botoes_inicio .botao{
+    margin-left: 5%;
+    margin-top: 3%;
+    margin-right: 5%;
+
 }
 .foto_apresentacao{
     width: 30%;
+    margin: 0%;
     
 
 }
@@ -59,6 +63,7 @@ apresentacao{
     width: 100%;
     display: flex;
     justify-content: center;
+    margin: 0%;
     
     
 }
