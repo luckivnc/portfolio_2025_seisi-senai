@@ -1,36 +1,66 @@
-/* 
-#0f0e0c
-#8c360a
-#c06308
-#c48f11
-#358956
-#316894
-#493896
-#ffffff
-#e1d4c4
-*/
 
-body{
-    background-color:#0f0e0c;
+/* Color Theme Swatches in Hex */
+.My-Color-Theme-1-hex { color: #0F0E0C; }
+.My-Color-Theme-2-hex { color: #543514; }
+.My-Color-Theme-3-hex { color: #E2DBD2; }
+.My-Color-Theme-4-hex { color: #FFFFFF; }
+.My-Color-Theme-5-hex { color: #8C360A; }
+.My-Color-Theme-6-hex { color: #9E5A1A; }
+.My-Color-Theme-7-hex { color: #DBCF42; }
+.My-Color-Theme-8-hex { color: #40A367; }
+.My-Color-Theme-9-hex { color: #3672A3; }
+.My-Color-Theme-10-hex { color: #493896; }
+
+/* Color Theme Swatches in RGBA */
+.My-Color-Theme-1-rgba { color: rgba(15, 14, 12, 1); }
+.My-Color-Theme-2-rgba { color: rgba(84, 53, 20, 1); }
+.My-Color-Theme-3-rgba { color: rgba(226, 219, 210, 1); }
+.My-Color-Theme-4-rgba { color: rgba(255, 255, 255, 1); }
+.My-Color-Theme-5-rgba { color: rgba(140, 54, 10, 1); }
+.My-Color-Theme-6-rgba { color: rgba(158, 90, 26, 1); }
+.My-Color-Theme-7-rgba { color: rgba(219, 207, 66, 1); }
+.My-Color-Theme-8-rgba { color: rgba(64, 163, 103, 1); }
+.My-Color-Theme-9-rgba { color: rgba(54, 114, 163, 1); }
+.My-Color-Theme-10-rgba { color: rgba(73, 56, 150, 1); }
+
+/* Color Theme Swatches in HSLA */
+.My-Color-Theme-1-hsla { color: hsla(40, 11, 5, 1); }
+.My-Color-Theme-2-hsla { color: hsla(30, 61, 20, 1); }
+.My-Color-Theme-3-hsla { color: hsla(33, 21, 85, 1); }
+.My-Color-Theme-4-hsla { color: hsla(0, 0, 100, 1); }
+.My-Color-Theme-5-hsla { color: hsla(20, 86, 29, 1); }
+.My-Color-Theme-6-hsla { color: hsla(29, 71, 36, 1); }
+.My-Color-Theme-7-hsla { color: hsla(55, 67, 55, 1); }
+.My-Color-Theme-8-hsla { color: hsla(143, 43, 44, 1); }
+.My-Color-Theme-9-hsla { color: hsla(206, 50, 42, 1); }
+.My-Color-Theme-10-hsla { color: hsla(250, 45, 40, 1); }
+
+
+#inicio{
+    background-color:#543514;
     font-family: 'Times New Roman', Times, serif;
-    color: #ffffff;
+    margin: 0%;
+
+    
 }
 button{
     cursor: pointer;
 }
-.botoes{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap 
+.header {
+    top: 0;
+    left: 0;
+    width: 100%;         /* largura total */
+    height: auto;
+    
 }
-.botao button {
-        color: #ffffff;
-        background: none;
-        border: none;
-        font-size: clamp(1.5rem,2vw,3rem);
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        display: block;
+
+.header img {
+    width: 100%;
+    height: auto;
+   
 }
+
+
 .botoes .botao{
     margin-left: 5%;
     margin-top: 3%;
@@ -39,6 +69,7 @@ button{
 }
 .foto_apresentacao{
     width: 30%;
+    transform: rotate(-5deg);
     
     
 
@@ -52,6 +83,8 @@ button{
     flex-direction: column;
     width: 57%;
     margin-left: 2%;
+    background-color: #E2DBD2;
+    color: #0F0E0C;
     
     
 }
@@ -59,13 +92,11 @@ button{
     display: flex;
     margin-left: 8%;
     margin-right: auto;
-    
-
 }
 .baner img{
     width: 100%;
     height: auto;
-    margin: 0%;
+    margin: 1%;
     padding: 0%;
 }
 .baner{
