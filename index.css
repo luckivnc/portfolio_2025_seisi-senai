@@ -35,7 +35,28 @@
 .My-Color-Theme-9-hsla { color: hsla(206, 50, 42, 1); }
 .My-Color-Theme-10-hsla { color: hsla(250, 45, 40, 1); }
 
+/* geral */
+button{
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+p{
+    font-size: clamp(0,5rem,2vw,2rem);
+}
+h2{
+    font-size: clamp(1.5rem,3vw,3rem);
+    margin: 0%;
+}
+h3{
+    font-size: clamp(1rem,2.5vw,2rem);
+    margin: 0%;
+}
 
+
+/* index */
 #inicio{
     background-color:#543514;
     font-family: 'Times New Roman', Times, serif;
@@ -43,9 +64,7 @@
 
     
 }
-button{
-    cursor: pointer;
-}
+
 .header {
     top: 0;
     left: 0;
@@ -66,10 +85,7 @@ button{
     
 
 }
-img{
-    width: 100%;
-    height: auto;
-}
+
 .txt_apresentacao{
     display: flex;
     flex-direction: column;
@@ -106,22 +122,6 @@ img{
 }
 
 
-button:hover {
-    background-color: #ffffff;
-    color: #0f0e0c;
-}
-
-p{
-    font-size: clamp(0,5rem,2vw,2rem);
-}
-h2{
-    font-size: clamp(1.5rem,3vw,3rem);
-    margin: 0%;
-}
-h3{
-    font-size: clamp(1rem,2.5vw,2rem);
-    margin: 0%;
-}
 .imagem{
     width: 35%;
     margin-left: 2%;
@@ -150,11 +150,13 @@ h3{
     width: 55%;
     cursor: pointer
 }
+/* presciso ajustar para definir que o fundo delas cubram uma parte especifica da pagina, não como esta agora */
 .img_curriculo{
     width: 70%;
     height: auto;
     margin: auto; 
     cursor: pointer;
+
 }
 .img_materias{
     width: 75%;
@@ -192,8 +194,13 @@ h3{
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
+    gap: 5%;
 }
-.botoes_materias button{
+.botoes_materias img{
+    display: block;
     width: 130%;
-    margin-left: 300px;
+    height: auto;
+    margin: auto;
+    
+
 }
