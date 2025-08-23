@@ -44,7 +44,7 @@ img{
     height: auto;
 }
 p{
-    font-size: clamp(0,5rem,2vw,2rem);
+    font-size: clamp(0.5rem,2vw,2rem);
 }
 h2{
     font-size: clamp(1.5rem,3vw,3rem);
@@ -207,7 +207,6 @@ h3{
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 0%;
-    padding: 20px; /* espaço interno opcional */
     background-color: rgba(54, 114, 163, 0.9);
     scroll-behavior: smooth; /* scroll suave */
     scrollbar-width: none; /* Firefox */
