@@ -179,7 +179,7 @@ h3{
 .botao_outros:hover,
 .botao_materias:hover,
 .botao_curriculo:hover{
-    background-color: #3672A3;
+    transform: scale(1.1);
 }
 
 
@@ -190,17 +190,38 @@ h3{
 }
 
 .botoes_materias{
+    position: fixed;   /* fixa na tela */
+    bottom: 0;         /* encosta no fundo */
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: row;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 5%;
+    gap: 20%;
+    padding: 20px; /* espaço interno opcional */
+    background-color: rgba(54, 114, 163, 0.9);
+    scroll-behavior: smooth; /* scroll suave */
 }
 .botoes_materias img{
     display: block;
-    width: 130%;
+    width: 180px;  /* melhor controlar com px em vez de 130% */
     height: auto;
     margin: auto;
+    cursor: pointer; /* deixa claro que é clicável */
+    transition: transform 0.3s ease; /* animação suave */
     
 
+}
+.botao_materias img:hover{
+    transform: scale(1.1);
+}
+#materias .botao{
+    flex: 0 0 auto;  /* impede esticar */
+    scroll-snap-align: center; /* centraliza */
+}
+.botoes_materias::before,
+.botoes_materias::after {
+    content: "";
+    flex: 0 0 50%;  /* metade da largura da tela */
 }
