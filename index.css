@@ -44,7 +44,7 @@ img{
     height: auto;
 }
 p{
-    font-size: clamp(0.5rem,2vw,2rem);
+    font-size: clamp(0.5 rem,2vw,2rem);
 }
 h2{
     font-size: clamp(1.5rem,3vw,3rem);
@@ -260,3 +260,4 @@ h3{
 .botao:hover .legenda {
     opacity: 1;
 }
+/* css temporario da pagina de materias so para a primeira entrega do portfolio */
