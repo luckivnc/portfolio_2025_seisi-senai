@@ -5,3 +5,11 @@ This repository is for my portfolio on high school and technical courses, using 
 <br>
 Este repositório é para meu portfólio sobre ensino médio e curso técnico, utilizando JavaScript, CSS e HTML para sua construção.
 
+## status individual das paginas
+### index
+![Badge css](http://img.shields.io/static/v1?label=CSS&message=finished&color=blue&style=for-the-badge) 
+![Badge html](http://img.shields.io/static/v1?label=HTML&message=finished&color=orange&style=for-the-badge) 
+![Badge js](http://img.shields.io/static/v1?label=JS&message=finished&color=yellow&style=for-the-badge) 
+![Badge links](http://img.shields.io/static/v1?label=LINKS&message=DEVELOPING&color=GREEN&style=for-the-badge) 
+![Badge style](http://img.shields.io/static/v1?label=STYLE&message=DEVELOPING&color=GREEN&style=for-the-badge) 
+
