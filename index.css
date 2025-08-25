@@ -44,7 +44,14 @@ img{
     height: auto;
 }
 p{
-    font-size: clamp(0.5 rem,2vw,2rem);
+    font-size: clamp(0.5rem,2vw,1.5rem);
+}
+h1{
+    font-family: 'Typewriter';
+    color: #FFFFFF;
+    font-size: clamp(2rem,10vw,7rem);
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
 h2{
     font-size: clamp(1.5rem,3vw,3rem);
@@ -55,11 +62,50 @@ h3{
     margin: 0%;
 }
 
+/* fontes */
+/* Regular */
+@font-face {
+  font-family: 'Typewriter';
+  src: url('/fontes/jmh_typewriter_mono/JMH\ Typewriter\ mono.ttf') format('truetype');
+  font-weight: 400;  /* normal */
+  font-style: normal;
+}
+/* 
+Thin
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('/fontes/MinhaFonte-Thin.ttf') format('truetype');
+  font-weight: 200;   bem leve 
+  font-style: normal;
+}
+Bold
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('../fontes/MinhaFonte-Bold.ttf') format('truetype');
+  font-weight: 700;   negrito 
+  font-style: normal;
+}
+
+Italic 
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('../fontes/MinhaFonte-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+Bold Italic 
+@font-face {
+  font-family: 'MinhaFonte';
+  src: url('../fontes/MinhaFonte-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+} */
 
 /* index */
 #inicio{
     background-color:#543514;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Typewriter';
     margin: 0%;
 
     
@@ -210,8 +256,13 @@ h3{
     background-color: rgba(54, 114, 163, 0.9);
     scroll-behavior: smooth; /* scroll suave */
     scrollbar-width: none; /* Firefox */
+    /* padding-inline: 50%; cria o espaço fantasma automático */
+    padding-left: calc(50% - 90px);  /* metade da tela - metade da largura do botão */
+    padding-right: calc(50% - 90px);
+    gap: 50vh; /* controla o "quanto" do próximo/ anterior aparece */
+    scrollbar-width: none;
     align-items: flex-end;
-    padding: 10px 0; /* só um respiro */
+    padding-top: 20px 0; /* só um respiro */
 }
 .botoes_materias::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
@@ -221,7 +272,7 @@ h3{
     margin: auto;
     cursor: pointer; /* deixa claro que é clicável */
     transition: transform 0.2s ease; /* animação suave */
-    height: 45vh; /* altura fixa proporcional à tela */
+    height: 70vh;/* altura fixa proporcional à tela */
     object-fit: cover;
     will-change: transform;
     
@@ -261,3 +312,7 @@ h3{
     opacity: 1;
 }
 /* css temporario da pagina de materias so para a primeira entrega do portfolio */
+#m {
+    background-color: #0F0E0C;
+    color: #FFFFFF;
+}

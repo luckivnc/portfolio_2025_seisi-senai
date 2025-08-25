@@ -22,5 +22,5 @@ container.addEventListener('wheel', function(e) {
         container.scrollBy({ left: -itemWidth, behavior: 'smooth' });
     }
 
-    setTimeout(() => { isScrolling = false; }, 400); // tempo da animação
+    setTimeout(() => { isScrolling = false; }, 500); // tempo da animação
 });
