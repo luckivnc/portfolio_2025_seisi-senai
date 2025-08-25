@@ -52,6 +52,7 @@ h1{
     font-size: clamp(2rem,10vw,7rem);
     margin-top: 5%;
     margin-bottom: 10%;
+    
 }
 h2{
     font-size: clamp(1.5rem,3vw,3rem);
@@ -315,4 +316,8 @@ Bold Italic
 #m {
     background-color: #0F0E0C;
     color: #FFFFFF;
+    
+}
+#m img:hover{
+    transform: scale(1.1);
 }
