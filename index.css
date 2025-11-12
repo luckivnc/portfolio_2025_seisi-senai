@@ -112,12 +112,14 @@ Bold Italic
     
 }
 
-.header {
+.header,
+.footer {
     top: 0;
+    bottom: 0;
     left: 0;
     width: 100%;         /* largura total */
     height: auto;
-    
+    MARGIN-bottom: 0;
 }
 .botoes .botao{
     margin-left: 5%;
@@ -207,7 +209,7 @@ Bold Italic
 
 }
 .img_materias{
-    width: 75%;
+    width: 80%;
     height: auto;
     margin: auto;
     cursor: pointer;
@@ -241,10 +243,11 @@ Bold Italic
 
 /* a partir daqui so oque é trabalhado na pagina materias  */
 #materias{
-    background-color: #3672A3;
+    background-color: rgba(73, 56, 150, 1);
 }
 
 .botoes_materias{
+    height: 90vh;
     position: fixed;   /* fixa na tela */
     bottom: 0;         /* encosta no fundo */
     left: 0;
@@ -254,16 +257,15 @@ Bold Italic
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 0%;
-    background-color: rgba(54, 114, 163, 0.9);
     scroll-behavior: smooth; /* scroll suave */
-    scrollbar-width: none; /* Firefox */
-    /* padding-inline: 50%; cria o espaço fantasma automático */
+    scrollbar-width: none;
     padding-left: calc(50% - 90px);  /* metade da tela - metade da largura do botão */
     padding-right: calc(50% - 90px);
-    gap: 50vh; /* controla o "quanto" do próximo/ anterior aparece */
-    scrollbar-width: none;
+    gap: 40vh; /* controla o "quanto" do próximo/ anterior aparece */
     align-items: flex-end;
     padding-top: 20px 0; /* só um respiro */
+
+    padding-bottom: 2%;
 }
 .botoes_materias::-webkit-scrollbar {
     display: none; /* Chrome, Safari */
@@ -273,9 +275,11 @@ Bold Italic
     margin: auto;
     cursor: pointer; /* deixa claro que é clicável */
     transition: transform 0.2s ease; /* animação suave */
-    height: 70vh;/* altura fixa proporcional à tela */
+    max-width: 40vh;
+    max-height: 80vh;
     object-fit: cover;
     will-change: transform;
+    margin-bottom: 1%;
     
 
 }
@@ -295,13 +299,13 @@ Bold Italic
 }
 .legenda {
     position: absolute;
-    bottom: 10px;
+    bottom: 0.1%;
     left: 50%;
     transform: translateX(-50%);
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.8);
     padding: 5px 10px;
     border-radius: 8px;
     opacity: 0;
