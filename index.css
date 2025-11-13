@@ -62,7 +62,9 @@ h3{
     font-size: clamp(1rem,2.5vw,2rem);
     margin: 0%;
 }
-
+span{
+    font-family: Typerwriter;
+}
 /* fontes */
 /* Regular */
 @font-face {
@@ -198,21 +200,24 @@ Bold Italic
 .img_outros{
     width: 55%;
     cursor: pointer;
+    position: relative;
     
 }
 .img_curriculo{
-    width: 70%;
+    width: 80%;
     height: auto;
     margin: auto; 
     cursor: pointer;
+    position: relative;
     
 
 }
 .img_materias{
-    width: 80%;
+    width: 75%;
     height: auto;
     margin: auto;
     cursor: pointer;
+    position: relative;
     
 }
 .botoes_materia_curriculo{
@@ -236,7 +241,26 @@ Bold Italic
 .botao_materias:hover,
 .botao_curriculo:hover{
     transform: scale(1.1);
+    .legendas{
+        opacity: 1;
+    }
     
+}
+.legendas {
+    position: absolute;
+    bottom: 20%; /* ajuste conforme o layout desejado */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 5px 10px;
+    border-radius: 8px;
+    opacity: 0; /* deixa sempre visível */
+    transition: opacity 0.3s ease;
+    pointer-events: none; /* permite clicar no botão embaixo */
+    z-index: 10; /* garante que fique acima do botão */
 }
 
 
