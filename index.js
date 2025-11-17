@@ -24,3 +24,13 @@ container.addEventListener('wheel', function(e) {
 
     setTimeout(() => { isScrolling = false; }, 700); // tempo da animação
 });
+
+const fundo = document.body; 
+const velocidadeParallax = 0.5; // ajuste a gosto
+
+if (container) {
+    container.addEventListener('scroll', function () {
+        const deslocamento = container.scrollLeft * velocidadeParallax;
+        fundo.style.backgroundPosition = `${-deslocamento}px center`;
+    });
+}
