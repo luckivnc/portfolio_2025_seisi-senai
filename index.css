@@ -141,9 +141,11 @@ Bold Italic
     display: flex;
     flex-direction: column;
     width: 57%;
-    margin-left: 2%;
+    margin-left: 3%;
     background-color: #E2DBD2;
     color: #0F0E0C;
+    padding: 1%;
+    
     
     
 }
@@ -267,7 +269,7 @@ Bold Italic
 
 /* a partir daqui so oque é trabalhado na pagina materias  */
 #materias {
-    background-image: url('https://lh3.googleusercontent.com/d/1Kc4iiECGcii_LKSlYQut60Vx2rT1wOkH');
+    background-image: url('https://lh3.googleusercontent.com/d/1v9ZNfioeL27lohoJM8hkaMxi8oVqZNjG');
     background-size: cover;
     background-repeat: repeat-x;
     background-position: center center;
@@ -359,5 +361,17 @@ Bold Italic
     color: #0F0E0C;
 }
 #m img:hover{
+    transform: scale(1.1);
+}
+
+#outros {
+    background-color: #0F0E0C;
+    color:  #E2DBD2;
+    
+}
+#outros .banner h1{
+    color: #E2DBD2;
+}
+#outros img:hover{
     transform: scale(1.1);
 }
